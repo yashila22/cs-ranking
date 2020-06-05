@@ -1,0 +1,435 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Contributing &mdash; csrank 1.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="History" href="history.html" />
+    <link rel="prev" title="Discrete Choice Models" href="api/discretechoice.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> csrank
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API Reference</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Contributing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#report-bugs">Report Bugs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#submit-feedback">Submit Feedback</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#write-documentation">Write Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#contribute-code">Contribute Code</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#pull-request-guidelines">Pull Request Guidelines</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tips">Tips</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#help-wanted">Help Wanted</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#do-maintenance">Do Maintenance</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#deploying">Deploying</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">History</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">csrank</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Contributing</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/contributing.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="contributing">
+<h1>Contributing<a class="headerlink" href="#contributing" title="Permalink to this headline">¶</a></h1>
+<p>Contributions are welcome, and they are greatly appreciated! Every little bit
+helps. Contributions do not have to be source code. There are many ways to
+contribute:</p>
+<div class="section" id="report-bugs">
+<h2>Report Bugs<a class="headerlink" href="#report-bugs" title="Permalink to this headline">¶</a></h2>
+<p>Report bugs at the <a class="reference external" href="https://github.com/kiudee/cs-ranking/issues">issue tracker</a>.</p>
+<p>If you are reporting a bug, please include:</p>
+<ul class="simple">
+<li><p>Your operating system name and version.</p></li>
+<li><p>Any details about your local setup that might be helpful in troubleshooting.</p></li>
+<li><p>Detailed steps to reproduce the bug.</p></li>
+<li><p>Ideally a <a class="reference external" href="https://stackoverflow.com/help/minimal-reproducible-example">minimal reproducible example</a>.</p></li>
+</ul>
+</div>
+<div class="section" id="submit-feedback">
+<h2>Submit Feedback<a class="headerlink" href="#submit-feedback" title="Permalink to this headline">¶</a></h2>
+<p>Feedback can be submitted at the <a class="reference external" href="https://github.com/kiudee/cs-ranking/issues">issue tracker</a> as well.</p>
+<p>If you are proposing a feature:</p>
+<ul class="simple">
+<li><p>Explain in detail how it would work and why you would want it.</p></li>
+<li><p>Keep the scope as narrow as possible, to make it easier to implement.</p></li>
+<li><p>Remember that this is a volunteer-driven project, and that code contributions
+are welcome :)</p></li>
+</ul>
+</div>
+<div class="section" id="write-documentation">
+<h2>Write Documentation<a class="headerlink" href="#write-documentation" title="Permalink to this headline">¶</a></h2>
+<p>This project could always use more documentation, whether as part of the
+official cs-ranking docs, in docstrings, or even on the web in blog posts,
+articles, and such. For writing in-project documentation, the setup is similar
+to contributing code.</p>
+</div>
+<div class="section" id="contribute-code">
+<h2>Contribute Code<a class="headerlink" href="#contribute-code" title="Permalink to this headline">¶</a></h2>
+<p>Ready to get your hands dirty?
+Here’s how to set up <code class="docutils literal notranslate"><span class="pre">cs-ranking</span></code> for local development.</p>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://help.github.com/en/github/getting-started-with-github/fork-a-repo">Fork</a> the <code class="docutils literal notranslate"><span class="pre">cs-ranking</span></code> repository on GitHub.</p></li>
+</ol>
+<ol class="arabic" start="2">
+<li><p>Clone your fork locally:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git clone git@github.com:your_github_username_here/cs-ranking.git
+</pre></div>
+</div>
+</li>
+<li><p>Optionally set up a virtual environment for development.
+Assuming you have <a class="reference external" href="https://virtualenvwrapper.readthedocs.io/en/latest/">virtualenvwrapper</a> installed:</p></li>
+</ol>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ mkvirtualenv cs-ranking
+</pre></div>
+</div>
+</div></blockquote>
+<ol class="arabic" start="3">
+<li><p>Install the required dependencies (including optional dependencies):</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ <span class="nb">cd</span> cs-ranking/
+$ pip install -r requirements-dev.txt
+</pre></div>
+</div>
+</li>
+<li><p>Set up <a class="reference external" href="https://pre-commit.com/">pre-commit</a> for this repository, which was installed in the
+previous step. This will make sure that the changes you make adhere to our
+coding standards by checking formatting with <cite>black</cite>.</p></li>
+</ol>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ pre-commit install
+</pre></div>
+</div>
+<p>You can run all pre-commit hooks on all files using</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ pre-commit run --all-files
+</pre></div>
+</div>
+<p>The hooks will be run automatically when you run <cite>git commit</cite>.</p>
+</div></blockquote>
+<ol class="arabic simple" start="5">
+<li><p>Install cs-ranking <a class="reference external" href="https://stackoverflow.com/questions/19048732/python-setup-py-develop-vs-install">for local development</a>:</p></li>
+</ol>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ python setup.py develop
+</pre></div>
+</div>
+</div></blockquote>
+<ol class="arabic" start="6">
+<li><p>Create a branch for your modifications:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git checkout -b some-name-for-the-branch
+</pre></div>
+</div>
+<p>Now you can make your changes locally.</p>
+</li>
+<li><p>When you’re done making changes, check that the test suite still passes:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ pytest
+</pre></div>
+</div>
+<p>Fetch some coffee.
+This might take several minutes.</p>
+</li>
+<li><p>Commit your changes and push your branch to GitHub:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git add .
+$ git commit
+$ git push origin some-name-for-the-branch
+</pre></div>
+</div>
+<p>Note that the second command will open an editor window in which you can
+write a commit message. Take care to use a <a class="reference external" href="https://chris.beams.io/posts/git-commit/">good, descriptive commit
+message</a>. If one of the <cite>pre-commit</cite> hooks fails, read the error output
+and make the necessary fixes. The fixes may already have been made before
+you (as is the case with <cite>black</cite> formatting), you just need to <cite>git add</cite>
+them.</p>
+<p>If you do not understand why the hook fails, feel free to skip the hook for
+now:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git commit --no-verify
+</pre></div>
+</div>
+<p>And mention the problem in the pull request. We will happily help you figure
+out the source of the problem.</p>
+</li>
+</ol>
+<ol class="arabic simple" start="9">
+<li><p><a class="reference external" href="https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request">Submit</a> a pull request through the GitHub website.
+Keep the guidelines in the next section in mind.</p></li>
+</ol>
+<div class="section" id="pull-request-guidelines">
+<h3>Pull Request Guidelines<a class="headerlink" href="#pull-request-guidelines" title="Permalink to this headline">¶</a></h3>
+<p>Before you submit a pull request, check that it meets these guidelines:</p>
+<ol class="arabic">
+<li><p>If you’re adding new functionality, you should also include <em>tests</em> and
+<em>documentation</em> for that functionality. Put your new functionality into
+a function with a docstring, and add the feature to the list in README.rst.
+You can also add tests to the docstring:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">my_awesome_new_fn</span><span class="p">(</span><span class="n">input_number</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;A function that does something and returns something.</span>
+
+<span class="sd">    Some extended documentation.</span>
+
+<span class="sd">    Python code prefixed by `&gt;&gt;&gt;` within the documentation doubles as</span>
+<span class="sd">    a test case:</span>
+
+<span class="sd">    &gt;&gt;&gt; print(&quot;Hello, world!&quot;)</span>
+<span class="sd">    Hello, world!</span>
+<span class="sd">    &gt;&gt;&gt; my_awesome_fn(42)</span>
+<span class="sd">    43</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">input_number</span> <span class="o">+</span> <span class="mi">1</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<ol class="arabic simple" start="3">
+<li><p>After submitting the pull request, keep an eye on <a class="reference external" href="https://travis-ci.org/github/kiudee/cs-ranking/pull_requests">travis</a> and make sure that
+the tests pass for all supported Python versions.</p></li>
+</ol>
+</div>
+<div class="section" id="tips">
+<h3>Tips<a class="headerlink" href="#tips" title="Permalink to this headline">¶</a></h3>
+<p>To run a subset of tests:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ pytest &lt;path-to-file&gt;
+</pre></div>
+</div>
+</div>
+<div class="section" id="help-wanted">
+<h3>Help Wanted<a class="headerlink" href="#help-wanted" title="Permalink to this headline">¶</a></h3>
+<p>Look through the GitHub issues. Anything tagged with <a class="reference external" href="https://github.com/kiudee/cs-ranking/issues?q=is%3Aissue+is%3Aopen+label%3Abug">“bug”</a> and <a class="reference external" href="https://github.com/kiudee/cs-ranking/issues?q=is%3Aissue+is%3Aopen+label%3A%22help%20wanted%22">“help
+wanted”</a> are particularly good places to get started. If you prefer to
+implement new features, the <a class="reference external" href="https://github.com/kiudee/cs-ranking/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement">“enhancement”</a> tag might be interesting as well.</p>
+</div>
+</div>
+<div class="section" id="do-maintenance">
+<h2>Do Maintenance<a class="headerlink" href="#do-maintenance" title="Permalink to this headline">¶</a></h2>
+<p>These tasks are mostly done by project maintainers, though if you think they
+need to be done you can of course open an issue and ask for it. A pull request
+is even better.</p>
+<div class="section" id="deploying">
+<h3>Deploying<a class="headerlink" href="#deploying" title="Permalink to this headline">¶</a></h3>
+<p>Make sure all your changes are committed (including an entry in HISTORY.rst).
+Then run</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ bump2version patch <span class="c1"># possible: major / minor / patch</span>
+$ git push
+$ git push --tags
+</pre></div>
+</div>
+<p>The new version will automatically be released on PyPi.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="history.html" class="btn btn-neutral float-right" title="History" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="api/discretechoice.html" class="btn btn-neutral float-left" title="Discrete Choice Models" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Karlson Pfannschmidt, Pritha Gupta, Eyke Hüllermeier
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
